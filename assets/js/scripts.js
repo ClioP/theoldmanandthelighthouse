@@ -17,13 +17,13 @@ class headerTemplate extends HTMLElement {
 			</div>
 
 			<div class="column content">
-				<a href="/" id="logo" class="logo">
+				<a href="/theoldmanandthelighthouse/" id="logo" class="logo">
 					<img src="assets/img/Logo-en.png" alt="" data-lang-key="logoAlt" data-logo>
 				</a>
 
 				<nav class="navbar" role="navigation" aria-label="main navigation">
 					<ul>
-						<li><a href="/" class="menu-item" data-lang-key="nav-home">home</a></li>
+						<li><a href="/theoldmanandthelighthouse/" class="menu-item" data-lang-key="nav-home">home</a></li>
 						<li><a href="pages/story.html" class="menu-item" data-lang-key="nav-story">the story</a></li>
 						<li><a href="pages/backstage.html" class="menu-item" data-lang-key="nav-backstage">backstage</a></li>
 					</ul>
