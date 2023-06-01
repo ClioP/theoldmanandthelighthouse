@@ -62,4 +62,4 @@ document.querySelectorAll('.menu-item').forEach((aciveItem) => {
 // Script to dynamically get the current year.
 const date = new Date();
 let currentYear = date.getFullYear();
-document.getElementById("current-year").innerHTML = currentYear;
+document.getElementById('current-year').innerHTML = currentYear;
