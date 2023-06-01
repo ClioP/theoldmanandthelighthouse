@@ -17,7 +17,7 @@ class headerTemplate extends HTMLElement {
 			</div>
 
 			<div class="column content">
-				<a href="/" id="logo" class="logo">
+				<a href="/theoldmanandthelighthouse/" id="logo" class="logo">
 					<img src="assets/img/Logo-en.png" alt="" data-lang-key="logoAlt" data-logo>
 				</a>
 
