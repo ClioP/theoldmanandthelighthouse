@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<base href="https://cliop.github.io/theoldmanandthelighthouse/" />
+	<base href="/" />
 
 	<title>The Old Man and the Lighthouse - The Story</title>
 
@@ -24,7 +24,30 @@
 </head>
 
 <body>
-	<header is="header-template" class="columns"></header>
+	<header class="columns">
+		<div class="column is-full top-bar">
+			<div id="language-switcher">
+				<div class="switcher">
+					<ul class="switcher-dropdown" lang-switcher></ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="column content">
+			<a href="/theoldmanandthelighthouse/" id="logo" class="logo">
+				<img src="assets/img/Logo-en.png" alt="" data-lang-key="logoAlt" data-logo>
+			</a>
+
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<ul>
+					<li><a href="/theoldmanandthelighthouse/" class="menu-item" data-lang-key="nav-home">home</a></li>
+					<li><a href="pages/story.html" class="menu-item" data-lang-key="nav-story">the story</a></li>
+					<li><a href="pages/backstage.html" class="menu-item" data-lang-key="nav-backstage">backstage</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
 	<main id="content-wrap" class="columns">
 		<article class="column is-half">
@@ -39,6 +62,8 @@
 		</article>
 	</main>
 
-	<footer is="footer-template" class="columns"></footer>
+	<footer class="columns">
+		<div class="copyright"><span id="current-year"></span> © <a href="https://clio.studio" target="_blank">Clio P.</a> | All rights reserved.</div>
+	</footer>
 </body>
 </html>
