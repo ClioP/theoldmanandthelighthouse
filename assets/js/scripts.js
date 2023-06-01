@@ -35,7 +35,6 @@ class headerTemplate extends HTMLElement {
 
 function addCustomElement(){
 	customElements.define('header-template', headerTemplate);
-	console.log("Added MyElement to custom element registry!");
 }
 
 addCustomElement();
