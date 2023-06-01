@@ -17,13 +17,13 @@ class headerTemplate extends HTMLElement {
 			</div>
 
 			<div class="column content">
-				<a href="/theoldmanandthelighthouse/" id="logo" class="logo">
+				<a href="/" id="logo" class="logo">
 					<img src="assets/img/Logo-en.png" alt="" data-lang-key="logoAlt" data-logo>
 				</a>
 
 				<nav class="navbar" role="navigation" aria-label="main navigation">
 					<ul>
-						<li><a href="/theoldmanandthelighthouse/" class="menu-item" data-lang-key="nav-home">home</a></li>
+						<li><a href="/" class="menu-item" data-lang-key="nav-home">home</a></li>
 						<li><a href="pages/story.html" class="menu-item" data-lang-key="nav-story">the story</a></li>
 						<li><a href="pages/backstage.html" class="menu-item" data-lang-key="nav-backstage">backstage</a></li>
 					</ul>
@@ -32,12 +32,6 @@ class headerTemplate extends HTMLElement {
 		`
 	}
 }
-
-function addCustomElement(){
-	customElements.define('header-template', headerTemplate);
-}
-
-addCustomElement();
 
 // Creating a Footer Template using Javascript Web Components
 // The method is the same as the Header Template
@@ -51,7 +45,11 @@ class footerTemplate extends HTMLElement {
 	}
 }
 
-customElements.define('footer-template', footerTemplate);
+// Actions to happen on page load.
+document.addEventListener('DOMContentLoaded', () => {
+	customElements.define('header-template', headerTemplate);
+	customElements.define('footer-template', footerTemplate);
+});
 
 
 // Add "active" class when menu item matches current page.
@@ -66,4 +64,4 @@ document.querySelectorAll('.menu-item').forEach((aciveItem) => {
 // Script to dynamically get the current year.
 const date = new Date();
 let currentYear = date.getFullYear();
-document.getElementById('current-year').innerHTML = currentYear;
+document.getElementById("current-year").innerHTML = currentYear;
