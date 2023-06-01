@@ -23,9 +23,9 @@ class headerTemplate extends HTMLElement {
 
 				<nav class="navbar" role="navigation" aria-label="main navigation">
 					<ul>
-						<li><a href="/" class="menu-item" data-lang-key="nav-home">home</a></li>
-						<li><a href="pages/story.html" class="menu-item" data-lang-key="nav-story">the story</a></li>
-						<li><a href="pages/backstage.html" class="menu-item" data-lang-key="nav-backstage">backstage</a></li>
+						<li><a href="theoldmanandthelighthouse/" class="menu-item" data-lang-key="nav-home">home</a></li>
+						<li><a href="theoldmanandthelighthouse/pages/story.html" class="menu-item" data-lang-key="nav-story">the story</a></li>
+						<li><a href="theoldmanandthelighthouse/pages/backstage.html" class="menu-item" data-lang-key="nav-backstage">backstage</a></li>
 					</ul>
 				</nav>
 			</div>
