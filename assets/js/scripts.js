@@ -33,7 +33,12 @@ class headerTemplate extends HTMLElement {
 	}
 }
 
-customElements.define('header-template', headerTemplate);
+function addCustomElement(){
+	customElements.define('header-template', headerTemplate);
+	console.log("Added MyElement to custom element registry!");
+}
+
+addCustomElement();
 
 // Creating a Footer Template using Javascript Web Components
 // The method is the same as the Header Template
